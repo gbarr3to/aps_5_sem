@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="ap_main" fx:controller="com.example.onlyserverclientapplication_chatside.Controller" prefHeight="396" prefWidth="478" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <Button fx:id="button_send" layoutX="404" layoutY="338" text="Send"></Button>
+        <TextField fx:id="tf_message" layoutX="30" layoutY="338" prefWidth="361" prefHeight="26"></TextField>
+        <ScrollPane fx:id="sp_main" layoutX="30" layoutY="70" prefHeight="256" prefWidth="418" fitToWidth="true">
+            <content>
+                <VBox fx:id="vbox_messages" prefHeight="248" prefWidth="412" />
+
+            </content>
+        </ScrollPane>
+        <Label layoutY="26" layoutX="114" text="TULSON">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="23"></Font>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
